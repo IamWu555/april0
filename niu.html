@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jcanvas/21.0.1/jcanvas.js"></script>
+    <title>画牛大赛</title>
+</head>
+
+<body>
+    <canvas width="210" height="198"></canvas>
+</body>
+<script>
+
+    $('canvas').drawPath({
+        //牛身子
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 3,
+        fillStyle: 'rgb(194,163,142)',
+        p1: {
+            type: 'bezier',
+            x1: 95, y1: 70, // 开始点
+            cx1: 150, cy1: 70, // 控制点
+            cx2: 175, cy2: 75, // 控制点
+            x2: 160, y2: 135, // 开始/结束点
+        },
+        p2: {
+            type: 'arc',
+            x: 155, y: 135,
+            radius: 5,
+            // 开始并结束角，以角度数计
+            start: 90, end: 270
+        },
+        p3: {
+            type: 'arc',
+            x: 145, y: 135,
+            radius: 5,
+            // 开始并结束角，以角度数计
+            start: 90, end: 270
+        },
+
+        p4: {
+            type: 'quadratic',
+            cx1: 120, cy1: 138, // 控制点
+            x2: 80, y2: 136,
+        },
+        p5: {
+            type: 'arc',
+            x: 75, y: 135,
+            radius: 5,
+            // 开始并结束角，以角度数计
+            start: 90, end: 270
+        },
+        p6: {
+            type: 'arc',
+            x: 65, y: 135,
+            radius: 5,
+            // 开始并结束角，以角度数计
+            start: 90, end: 270
+        },
+        p7: {
+            type: 'bezier',
+            // x1: 70, y1: 135, // 开始点
+            cx1: 56, cy1: 125, // 控制点
+            cx2: 56, cy2: 120, // 控制点
+            x2: 60, y2: 113, // 开始/结束点
+        }
+    }).drawEllipse({
+        //头
+        strokeStyle: 'rgb(113, 86, 77)', //边框颜色
+        fillStyle: 'rgb(194,163,142)', //背景颜色
+        strokeWidth: 4,
+        x: 65, y: 65,
+        width: 60, height: 50
+    }).drawQuadratic({
+        // 左角
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(194,163,142)',
+        x1: 42, y1: 47, // 开始点
+        cx1: 44, cy1: 32, // 控制点
+        x2: 58, y2: 28  // 结束点
+    }).drawQuadratic({
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        x1: 54, y1: 40, // 开始点
+        cx1: 53, cy1: 35, // 控制点
+        x2: 58, y2: 28  // 结束点
+    }).drawQuadratic({
+        // 右角
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(194,163,142)',
+        x1: 78, y1: 40, // 开始点
+        cx1: 78, cy1: 35, // 控制点
+        x2: 77, y2: 28  // 结束点
+    }).drawQuadratic({
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        x1: 86, y1: 45, // 开始点
+        cx1: 89, cy1: 38, // 控制点
+        x2: 77, y2: 28  // 结束点
+    }).drawEllipse({
+        //左耳
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(194,163,142)',
+        x: 34, y: 49,
+        width: 12, height: 8
+    }).drawEllipse({
+        //右耳
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(194,163,142)',
+        x: 96, y: 48,
+        width: 12, height: 8
+    }).drawArc({
+        //眼睛
+        fillStyle: 'rgb(113, 86, 77)',
+        x: 55, y: 55,
+        radius: 2
+    }).drawArc({
+        fillStyle: 'rgb(113, 86, 77)',
+        x: 75, y: 55,
+        radius: 2
+    }).drawRect({
+        //鼻子
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(211,200,190)',
+        x: 65, y: 90,
+        height: 50, width: 70,
+        cornerRadius: 50
+    }).drawArc({
+        //鼻孔
+        fillStyle: 'rgb(113, 86, 77)',
+        x: 56, y: 91,
+        radius: 3
+    }).drawArc({
+        //鼻孔
+        fillStyle: 'rgb(113, 86, 77)',
+        x: 80, y: 92,
+        radius: 3
+    }).drawBezier({
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        x1: 163, y1: 100,
+        cx1: 190, cy1: 100,
+        cx2: 163, cy2: 130,
+        x2: 190, y2: 130,
+    }).drawEllipse({
+        //小尾巴
+        radius: 3,
+        strokeStyle: 'rgb(113, 86, 77)',
+        strokeWidth: 4,
+        fillStyle: 'rgb(194,163,142)',
+        x: 193, y: 130,
+        width: 12, height: 8
+    }).drawText({
+        fillStyle: 'black',
+        strokeStyle: 'black',
+        x: 115, y: 170,
+        fontSize: 18,
+        text: '牛气冲天'
+    })
+
+</script>
+
+</html>

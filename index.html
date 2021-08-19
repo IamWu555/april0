@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="stylesheet" href="master.css">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-4 mb-4">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h4 class="text-center text-dark">心灵小岛</h4>
+        <div class="middle">
+	<div class="time text-center text-dark">2021年结束还有<span id="d"></span>天<span id="h"></span>小时<span id="m"></span>分钟<span id="s"></span>秒</div>
+        <!-- <p id = "djs" class="text-dark text-center"></p> -->
+        <div id='aplayer'></div>
+            <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+            <script>const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                listFolded: true,
+                audio: [
+                {
+                    name: '反方向的钟',
+                    artist: '周杰伦',
+                    url: 'http://pic.wubuster.com/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E5%8F%8D%E6%96%B9%E5%90%91%E7%9A%84%E9%92%9F.flac',
+                    cover: 'http://pic.wubuster.com/img/aprilge'
+                }
+                	]
+            });
+            </script>
+        <ul class="timeline">
+          <li>
+            <a href="/v20">《小破岛的一周年》</a>
+            <a href="/v20/" class="float-right">2021-02-28</a>
+            <p>还是安静🌃</p>
+          </li>
+          <li>
+            <a href="/v19">《除夕》</a>
+            <a href="/v19/" class="float-right">2021-02-11</a>
+            <p>新春快乐🎉</p>
+          </li>
+          <li>
+            <a href="/2020">《总结》</a>
+            <a href="/2020/" class="float-right">2020-12-28</a>
+            <p>️有点安静🌃</p>
+          </li>
+          <li>
+            <a href="/v18">《融化》</a>
+            <a href="/v18/" class="float-right">2020-12-21</a>
+            <p>️没有主题🎄</p>
+          </li>
+          <li>
+            <a href="/v17">《生日快乐》</a>
+            <a href="/v17/" class="float-right">2020-11-27</a>
+            <p>祝你所想皆所愿🕯️</p>
+          </li>
+          <li>
+            <a href="/v16">《检讨》</a>
+            <a href="/v16/" class="float-right">2020-10-25</a>
+            <p>sorry🙇</p>
+          </li>
+          <li>
+            <a href="/v15">《随笔》</a>
+            <a href="/v15/" class="float-right">2020-09-19</a>
+            <p>“所以爱会消失对不对？” “不对”🎂</p>
+          </li>
+          <li>
+            <a href="/v14">《小小的遗憾》</a>
+            <a href="/v14/" class="float-right">2020-08-09</a>
+            <p>缺一束花🌹</p>
+          </li>
+          <li>
+            <a href="/v13/">《终于考完啦》</a>
+            <a href="/v13/" class="float-right">2020-07-23</a>
+            <p>前程似锦🌸</p>
+          </li>
+          <li>
+            <a href="/v12/">《笑笑挑战》</a>
+            <a href="/v12/" class="float-right">2020-06-16</a>
+            <p>你能忍住不笑么😃</p>
+          </li>
+          <li>
+            <a href="/v11/">《儿童节快乐》</a>
+            <a href="/v11/" class="float-right">2020-06-01</a>
+            <p>成为更厉害的大人和更可爱的小孩🍬</p>
+          </li>
+          <li>
+			<a href="/v10/">《520》</a>
+			<a href="/v10/" class="float-right">2020-05-20</a>
+			<p>我爱你，一直都爱</p>
+		  </li>
+		  <!--<li>
+            <a href="/v9/">《情侣头像》</a>
+            <a href="/v9/" class="float-right">2020-05-08</a>
+            <p>记录点滴美好🌈</p>
+          </li>-->
+          <li>
+            <a href="/v8/">《香飘飘还是优乐美》</a>
+            <a href="/v8/" class="float-right">2020-04-27</a>
+            <p>睡个好觉，晚安💤</p>
+          </li>
+          <li>
+            <a href="/v7/">《三周年快乐》</a>
+            <a href="/v7/" class="float-right">2020-04-23</a>
+            <p>永远心中有爱🥰</p>
+          </li>
+          <li>
+            <a href="/v6/">《超大月亮》</a>
+            <a href="/v6/" class="float-right">2020-04-07</a>
+            <p>月亮代表我的心🌙</p>
+          </li>
+          <li>
+            <a href="/v5/">《集星计划一周年》</a>
+            <a href="/v5/" class="float-right">2020-04-03</a>
+            <p>岁月如梭，keep moving❤️</p>
+          </li>
+          <li>
+            <a href="/v4/">《高考鼓励》</a>
+            <a href="/v4/" class="float-right">2020-03-21</a>
+            <p>放轻松，你可以的🐎</p>
+          </li>
+          <li>
+            <a href="/v3/">《女神节快乐》</a>
+            <a href="/v3/" class="float-right">2020-03-08</a>
+            <p>祝你天天开心🌹</p>
+          </li>
+          <li>
+            <a href="/v2/">《闰年多出的一天》</a>
+            <a href="/v2/" class="float-right">2020-02-29</a>
+            <p>四年一度的独特浪漫☀️</p>
+          </li>
+          <li>
+            <a href="/v1/">《心灵小岛的第一天》</a>
+            <a href="/v1/" class="float-right">2020-02-27</a>
+            <p>我是心灵小岛，未来多多关照🎈</p>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+	<script>
+	console.log('\n' + ' %c by IamWu555' + ' %c https://blog.wubuster.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+	</script>
+	<script>
+    window.onload = function() {
+        setInterval(function() {
+            var nowTime = new Date();//获取当前时间
+            //创建目标日期
+            var endTime = new Date("2020/02/17 00:00:00");
+            var seconds = parseInt((nowTime.getTime() - endTime.getTime()) / 1000);//两个时间点的时间差(秒)
+            var d = parseInt(seconds / 3600 / 24);//得到天数
+            var h = parseInt(seconds / 3600 % 24);//小时
+            var m = parseInt(seconds / 60 % 60);//分钟
+            var s = parseInt(seconds % 60);//秒
+            document.getElementById("djs").innerHTML = "🐏和🐟已经" + d +"天" + h + "小时" + m + "分钟" + s + "秒";
+        }, 1000);
+    }
+</script>
+
+
+
+<script>
+////////////////////////////////////////////////////////////
+
+// Simple CountDown Clock
+
+const comingdate = new Date("Jan 01, 2022 00:00:00");
+
+const d = document.getElementById("d");
+const h = document.getElementById("h");
+const m = document.getElementById("m");
+const s = document.getElementById("s");
+
+const countdown = setInterval(() => {
+  const now   = new Date();
+  const des   = comingdate.getTime() - now.getTime();
+  const days  = Math.floor(des / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((des % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins  = Math.floor((des % (1000 * 60 * 60)) / (1000 * 60));
+  const secs  = Math.floor((des % (1000 * 60)) / 1000);
+
+  d.innerHTML = getTrueNumber(days);
+  h.innerHTML = getTrueNumber(hours);
+  m.innerHTML = getTrueNumber(mins);
+  s.innerHTML = getTrueNumber(secs);
+  
+  
+  if (x <= 0) clearInterval(x);
+}, 1000);
+
+const getTrueNumber = x => (x < 10 ? "0" + x : x);
+
+</script>
+</body>
+
+</html>
