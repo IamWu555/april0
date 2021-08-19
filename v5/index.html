@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>心灵小岛</title>
+        <link rel="stylesheet" href="master.css">
+        <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+   
+
+    </head>
+    <body>
+        <div class="container">
+            <div id='aplayer'></div>
+            <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+            <script>const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                audio: [{
+                    name: '初めてのデート',
+                    artist: 'SimorE',
+                    url: 'http://music.163.com/song/media/outer/url?id=475774775.mp3',
+                    cover: 'http://pic.wubuster.com/img/202004022'
+                }]
+            });
+            </script>
+            <div class="blank"></div>
+            <section id="cover">
+            	<img src="http://pic.wubuster.com/img/202004021" alt=""/>
+            </section>
+        </div>
+    </body>
+</html>

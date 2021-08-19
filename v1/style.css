@@ -1,0 +1,37 @@
+html,body{
+    margin: 0px;
+    background-color: #f2f5fa;
+}
+.container{
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.blank{
+    height: 15px;
+}
+#cover{
+    height: 800px;
+    background: url(http://www.wubuster.com/wangyang/%E6%98%8E%E4%BF%A1%E7%89%87.jpg
+) center top no-repeat;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: .25rem!important;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}

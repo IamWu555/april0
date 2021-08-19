@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>心灵小岛</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.wubuster.com/uikit/uikit.min.css" />
+    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <script src="http://www.wubuster.com/uikit/uikit.min.js"></script>
+    <script src="http://www.wubuster.com/uikit/uikit-icons.min.js"></script>
+    <style>
+	.blessing{
+		background-color: #a55f14;
+		color: #fff;
+	}
+</style>
+</head>
+
+<body class="uk-container-xsmall uk-align-center uk-margin-remove-top uk-margin-remove-bottom">
+    <!-- Aplayer start -->
+    <div id='aplayer'></div>
+    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+    <script>const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        audio: [{
+            name: 'April Encounter',
+            artist: '很美味',
+            url: 'http://music.163.com/song/media/outer/url?id=551400874.mp3',
+            cover: 'http://pic.wubuster.com/img/20200829last1'
+        }]
+    });
+    </script>
+    <!-- Aplayer end -->
+    <!-- img start -->
+    <img src="http://pic.wubuster.com/img/202008291" alt="" width="999px" height="9999px">
+    <!-- img end -->
+    <!-- text start -->
+    <div class="uk-card uk-card-body blessing">
+        <p>嘿，分手已经6天了，今天不小心打开了我的备忘录，发现里面全是和你有关的点点滴滴，好叭，又是难过的一天。</p>
+        <p>还记得这个网站最初的样子么？只有一个网页，由音乐播放器，图片，还有一些文字组成的，每更新一次，就会覆盖掉之前的内容，可它的入口是一个我亲手画的二维码。后面进行了两次改良，第一次是增加了一个主页，并采用了时间轴的方式使得每次更新的内容得以保存，第二次是增加了一个统计我们在一起时间的计时器。分手的那天晚上，我还在实验能不能给网站主页做成动态的，但没有办法实现了。</p>
+        <p>其实，我知道你再也不会去看这个网站上的东西，甚至连网址也会忘掉，放不下它的只有我一个人。关于心灵小岛，它只运行了半年的时间，我爱它的每一篇文案，每一张背景，每一首歌曲，每一个设计，如同我爱你一样。关于我的满怀热情，也该告一段落了，这个网站大概会在不久后到期，到期后就再也无法进入，如同我和你一样。</p>
+        <p>嘿，还记得么？我跟你讲过的，后缀ICU是i see you的意思，选这个后缀的时候我总想着和你再次见面的情景，但我们不会再见了。
+        </p>
+    </div>
+    <!-- text end -->
+</body>
+
+</html>
