@@ -37,7 +37,7 @@ ul.timeline > li:before {
    right: 0;
    bottom: 0;
    left: 0;
-   background:url(/bgimg?wu=302)center 0 no-repeat;
+   background:url(/bgimg)center 0 no-repeat;
    background-size: cover;
 }
 a{
